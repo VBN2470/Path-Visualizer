@@ -1,0 +1,231 @@
+
+.info div {
+    /* background: whitesmoke; */
+    border: none;
+    display: inline-block;
+    font-weight: 500;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.start {
+    animation: startAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    background: green;
+    height: 24px;
+    width: 24px;
+    
+}
+
+@keyframes startAnimation {
+    0% {
+        transform: rotate(45deg) scale(0.4);
+        background: green;
+    }
+
+    50% {
+        transform: rotate(45deg) scale(0.8);
+        background: green;
+    }
+
+    75% {
+        transform: rotate(45deg) scale(0.6);
+        background: green;
+    }
+
+    100% {
+        transform: rotate(45deg) scale(0.5);
+        background: rgb(0, 168, 0);
+    }
+}
+
+.target {
+    animation: targetAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    background-color: red;
+    height: 24px;
+    width: 24px;
+    /* transform: rotate(45deg) scale(0.4); */
+}
+
+@keyframes targetAnimation {
+    0% {
+        transform: rotate(45deg) scale(0.4);
+        background: rgb(224, 0, 0);
+    }
+
+    50% {
+        transform: rotate(45deg) scale(0.8);
+        background: rgb(224, 0, 0);
+    }
+
+    75% {
+        transform: rotate(45deg) scale(0.6);
+        background: rgb(224, 0, 0);
+    }
+
+    100% {
+        transform: rotate(45deg) scale(0.5);
+        background: rgb(255, 0, 0);
+    }
+}
+
+.wall {
+    animation-name: wallAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    background: rgb(12, 48, 72);
+    height: 24px;
+    width: 24px;
+}
+
+@keyframes wallAnimation {
+    0% {
+        transform: scale(0.4);
+        background: rgb(6, 48, 64);
+    }
+
+    50% {
+        transform: scale(0.8);
+        background: rgb(6, 48, 64);
+    }
+
+    75% {
+        transform: scale(0.6);
+        background: rgb(12, 48, 72);
+    }
+
+    100% {
+        transform: rotate(45deg) scale(0.5);
+        background: rgb(12, 48, 72);
+    }
+}
+
+.weight {
+    animation-name: weightAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    /* background: rgb(12, 48, 72); */
+    height: 24px;
+    width: 24px;
+}
+
+@keyframes weightAnimation {
+    0% {
+        transform: scale(0.6);
+        background: rgb(255, 144, 0);
+    }
+
+    50% {
+        /* transform: scale(0.8); */
+        background: rgb(255, 124, 0);
+    }
+
+    75% {
+        transform: scale(1.1);
+        background: rgb(255, 120, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        background: rgb(255, 100, 0);
+    }
+}
+
+.visited {
+    animation-name: visitedAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    height: 24px;
+    width: 24px;
+}
+
+@keyframes visitedAnimation {
+    0% {
+        transform: scale(0.25);
+        background-color: rgba(0, 0, 64, 0.8);
+        border-radius: 100%;
+    }
+
+    25% {
+        transform: scale(0.6);
+        background-color: rgba(0, 24, 100, 0.8);
+    }
+
+    50% {
+        transform: scale(0.8);
+        background-color: rgba(16, 104, 216, 0.8);
+    }
+
+    75% {
+        transform: scale(1.1);
+        background-color: rgba(0, 216, 160, 0.8);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: rgba(0, 180, 220, 0.8);
+    }
+}
+
+.unvisited {
+    animation-name: unvisitedAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    height: 24px;
+    width: 24px;
+    border: 1px solid rgb(180, 218, 255);
+}
+
+@keyframes unvisitedAnimation {
+    0% {
+        transform: scale(1);
+        background: white;
+    }
+
+    100% {
+        transform: scale(1);
+        background: white;
+        border: 1px solid rgb(180, 218, 255);
+    }
+}
+
+.shortest-path {
+    animation-name: shortestPath;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    width: 24px;
+    height: 24px;
+}
+
+@keyframes shortestPath {
+    
+    0% {
+        transform: scale(0.4);
+        background-color: rgb(255, 255, 144);
+    }
+
+    50% {
+        /* transform: scale(0.8); */
+        background-color: rgb(255, 255, 132);
+    }
+
+    75% {
+        transform: scale(1.1);
+        background-color: rgb(255, 255, 96);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: rgb(255, 255, 84);
+    }
+}
