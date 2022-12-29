@@ -1,0 +1,15 @@
+
+.btn {
+    font-size: small !important;
+    border-radius: 2rem !important;
+    margin: 0.5rem;
+}
+
+#basic-nav-dropdown {
+    background: royalblue;
+    color: white;
+    font-size: small !important;
+    border-radius: 2rem !important;
+    margin: 0.5rem;
+    padding: 0.6rem 2rem; 
+}

@@ -1,0 +1,30 @@
+
+.info-box {
+    background: whitesmoke;
+    border-radius: 4px;
+    padding: 0.6rem;
+}
+
+.demo-box {
+    background: rgb(216, 240, 248);
+    border-radius: 4px;
+    padding: 0.6rem;
+    margin: 8px 0;
+}
+
+.end-box {
+    background: rgb(204, 244, 204);
+    border-radius: 4px;
+    padding: 0.6rem;
+    margin: 8px 0;
+}
+
+.key {
+    background: black;
+    border-radius: 4px;
+    color: white;
+    display: inline;
+    font-size: small;
+    padding: 0.2rem;
+    
+}
